@@ -1,0 +1,17 @@
+{
+  "file": "projects",
+  "projects" : [
+    {
+      "name": "Facebook T-Shirt Generator",
+      "emoji": "👕",
+      "description": "A satirical foray into SSR React.js sites",
+      "url": "https://tshirts.cortlan.co"
+    },
+    {
+      "name": "Groceries",
+      "emoji": "🍎",
+      "description": "A grocery list app hosted in Firebase using a noSQL database and simple AI categorization",
+      "url": "https://groceries.cortlan.co"
+    }
+  ]
+}
