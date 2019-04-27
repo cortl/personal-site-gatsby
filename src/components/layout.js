@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Header from './header'
 
-// import '../../node_modules/react-skeleton-css/styles/skeleton.2.0.4.css'
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

@@ -34,7 +34,7 @@ const IndexPage = () => (
       const socials = data.allDataJson.edges.find(edge => edge.node.file === "social").node.socials;
       return (
         <Layout>
-          <SEO title="" keywords={[`gatsby`, `application`, `react`, 'personal', 'personal site', 'cortlan', 'bainbridge', 'cortlan bainbridge', 'open source', 'software']} />
+          <SEO title=" " keywords={[`gatsby`, `application`, `react`, 'personal', 'personal site', 'cortlan', 'bainbridge', 'cortlan bainbridge', 'open source', 'software']} />
           <h2>About</h2>
           <p>I'm Cortlan, a detail oriented full stack software engineer.
             I've worked on embedded systems like UAVs, infrastructure and server maintenance, cloud API development,
