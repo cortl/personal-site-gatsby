@@ -3,7 +3,7 @@
     "socials": [
         {
             "name": "Email",
-            "url": "mailto:cortlan.bainbridge@gmail.com"
+            "url": "mailto:me@cortlan.dev"
         },
         {
             "name": "GitHub",
@@ -12,10 +12,6 @@
         {
             "name": "Instagram",
             "url": "https://www.instagram.com/cortlanbainbridge/"
-        },
-        {
-            "name": "Twitter",
-            "url": "https://www.twitter.com/SexyManCortlan"
         }
     ]
 }

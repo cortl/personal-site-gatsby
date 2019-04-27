@@ -3,7 +3,7 @@
   "private": true,
   "description": "Cortlan's personal site",
   "version": "0.1.0",
-  "author": "Cortlan Bainbridge <cortlan.bainbridge@gmail.com>",
+  "author": "Cortlan Bainbridge <me@cortlan.dev>",
   "dependencies": {
     "firebase-tools": "^6.2.2",
     "gatsby": "^2.0.76",
