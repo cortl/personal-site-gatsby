@@ -15,18 +15,19 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div style={{
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        padding: '1.5rem 1.125rem',
-        paddingTop: '1.5rem',
-        maxWidth: "40rem"
-      }}>
+      <div
+        style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          padding: '1.5rem 1.125rem',
+          paddingTop: '1.5rem',
+          maxWidth: '40rem',
+        }}
+      >
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           {children}
-          <footer>
-          </footer>
+          <footer />
         </div>
       </div>
     )}
