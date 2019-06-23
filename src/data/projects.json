@@ -18,6 +18,12 @@
       "emoji": "🔌", 
       "description": "Plugin for Insomnia that creates an OICD token for calling your services behind IAP using a sevice account credentials",
       "url": "https://github.com/cortl/insomnia-plugin-googlejwt"
+    },
+    {
+      "name": "Express GCP",
+      "emoji": "🐣",
+      "description": "Bootstrap project for a Express/Node application running on Google's App Engine",
+      "url": "https://github.com/cortl/express-gcp"
     }
   ]
 }
