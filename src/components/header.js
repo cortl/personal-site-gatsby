@@ -1,31 +1,31 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
-import Profile from './profile'
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Profile from './profile';
 
 const Header = ({ siteTitle }) => (
-  <>
-    <Profile />
-    <h1>
-      <Link
-        to="/"
-        style={{
-          color: `black`,
-          textDecoration: `none`,
-        }}
-      >
-        {siteTitle}
-      </Link>
-    </h1>
-  </>
-)
+	<>
+		<Profile />
+		<h1>
+			<Link
+				to='/'
+				style={{
+					color: `black`,
+					textDecoration: `none`,
+				}}
+			>
+				{siteTitle}
+			</Link>
+		</h1>
+	</>
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+	siteTitle: PropTypes.string,
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+	siteTitle: ``,
+};
 
-export default Header
+export default Header;
