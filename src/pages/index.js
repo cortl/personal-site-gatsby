@@ -9,25 +9,25 @@ import { Emoji } from '../components/emoji';
 const IndexPage = () => (
 	<StaticQuery
 		query={graphql`
-		{
-			allDataJson {
-				edges {
-					node {
-						file
-						projects {
-							name
-							emoji
-							description
-							url
-						}
-						socials {
-							name
-							url
+			{
+				allDataJson {
+					edges {
+						node {
+							file
+							projects {
+								name
+								emoji
+								description
+								url
+							}
+							socials {
+								name
+								url
+							}
 						}
 					}
 				}
 			}
-		}
 		`}
 		render={data => {
 			const projects = data.allDataJson.edges.find(
@@ -63,8 +63,8 @@ const IndexPage = () => (
 						I'm a open source aficionado{' '}
 						<Emoji symbol={'💻'} description={'computer'} />
 						, powerlifting enthusiast
-						<Emoji symbol={'🏋️‍♀'} description={'male weightlifter'} />
-						, and coffee consumer{' '}
+						<Emoji symbol={'🏋️‍♀'} description={'male weightlifter'} />, and
+						coffee consumer{' '}
 						<Emoji symbol={'☕'} description={'cup of coffee'} />
 					</p>
 					<h2>Projects</h2>
