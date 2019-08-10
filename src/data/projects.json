@@ -5,19 +5,25 @@
       "name": "Facebook T-Shirt Generator",
       "emoji": "👕",
       "description": "A satirical foray into SSR React.js sites",
-      "url": "https://tshirts.cortlan.co"
+      "url": "https://tshirts.cortlan.dev"
     },
     {
       "name": "Groceries",
       "emoji": "🍎",
       "description": "A grocery list app hosted in Firebase using a noSQL database and simple AI categorization",
-      "url": "https://groceries.cortlan.co"
+      "url": "https://groceries.cortlan.dev"
     },
     {
       "name": "Google JWT Plugin for Insomnia",
       "emoji": "🔌", 
       "description": "Plugin for Insomnia that creates an OICD token for calling your services behind IAP using a sevice account credentials",
       "url": "https://github.com/cortl/insomnia-plugin-googlejwt"
+    },
+    {
+      "name": "Ratings",
+      "emoji": "🎞",
+      "description": "Web application built using Vue.js and Express that displays visualizations for TV shows.  Built on top of my express-gcp project",
+      "url": "https://ratings.cortlan.dev"
     },
     {
       "name": "Express GCP",
