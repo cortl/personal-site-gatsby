@@ -3,14 +3,12 @@ import '../styles/list.css';
 
 const InlineList = ({ children, style }) => (
 	<ul style={style} className='inline'>
-		{children.map((child, index) => {
-			return (
-				<>
-					{child}
-					{children.length - 1 !== index && ' • '}
-				</>
-			);
-		})}
+		{children.map((child, index) => (
+			<>
+				{child}
+				{children.length - 1 !== index && ' • '}
+			</>
+		))}
 	</ul>
 );
 

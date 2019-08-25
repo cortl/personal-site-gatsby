@@ -17,6 +17,7 @@ const IndexPage = () => (
 							projects {
 								name
 								emoji
+								emojiDescription
 								description
 								url
 							}
@@ -74,15 +75,18 @@ const IndexPage = () => (
 								<a href={project.url}>
 									<strong>{project.name}</strong>
 								</a>
-								<Emoji>{project.emoji}</Emoji>
+								<Emoji
+									symbol={project.emoji}
+									description={project.emojiDescription}
+								/>
 								{` - ${project.description}`}
 							</li>
 						))}
 					</ul>
 					<div style={{ marginTop: '5rem' }} />
 					<InlineList style={{ marginRight: 'auto', marginLeft: 'auto' }}>
-						{socials.map(social => (
-							<li>
+						{socials.map((social, index) => (
+							<li key={index}>
 								<a href={social.url}>{social.name}</a>
 							</li>
 						))}
