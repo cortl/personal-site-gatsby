@@ -3,8 +3,11 @@ import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import InlineList from '../components/inline-list';
 import SEO from '../components/seo';
-import '../styles/list.css';
 import { Emoji } from '../components/emoji';
+import Header from '../components/header';
+import '../styles/list.css';
+
+const byFile = fileName => edge => edge.node.file === fileName;
 
 const IndexPage = () => (
 	<StaticQuery
@@ -28,15 +31,18 @@ const IndexPage = () => (
 						}
 					}
 				}
+				site {
+					siteMetadata {
+						title
+					}
+				}
 			}
 		`}
 		render={data => {
-			const projects = data.allDataJson.edges.find(
-				edge => edge.node.file === 'projects'
-			).node.projects;
-			const socials = data.allDataJson.edges.find(
-				edge => edge.node.file === 'social'
-			).node.socials;
+			const projects = data.allDataJson.edges.find(byFile('projects')).node
+				.projects;
+			const socials = data.allDataJson.edges.find(byFile('social')).node
+				.socials;
 			return (
 				<Layout>
 					<SEO
@@ -54,6 +60,7 @@ const IndexPage = () => (
 							'software',
 						]}
 					/>
+					<Header siteTitle={data.site.siteMetadata.title} />
 					<h2>About</h2>
 					<p>
 						I'm Cortlan, a detail oriented full stack software engineer. I've
