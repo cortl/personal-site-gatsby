@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Profile from './profile';
 
-const Header = ({ siteTitle }) => (
-	<>
+export const Header = ({ siteTitle }) => (
+	<div id='header'>
 		<Profile />
 		<h1>
 			<Link
@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
 				{siteTitle}
 			</Link>
 		</h1>
-	</>
+	</div>
 );
 
 Header.propTypes = {
@@ -26,5 +26,3 @@ Header.propTypes = {
 Header.defaultProps = {
 	siteTitle: ``,
 };
-
-export default Header;

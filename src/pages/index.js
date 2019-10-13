@@ -1,14 +1,14 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import InlineList from '../components/inline-list';
 import SEO from '../components/seo';
 import { Emoji } from '../components/emoji';
-import Header from '../components/header';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
 import '../styles/list.css';
 import '../styles/index.css';
 
-const byFile = fileName => edge => edge.node.file === fileName;
+export const byFile = fileName => edge => edge.node.file === fileName;
 
 const IndexPage = () => (
 	<StaticQuery
@@ -42,8 +42,6 @@ const IndexPage = () => (
 		render={data => {
 			const projects = data.allDataJson.edges.find(byFile('projects')).node
 				.projects;
-			const socials = data.allDataJson.edges.find(byFile('social')).node
-				.socials;
 			return (
 				<Layout>
 					<SEO
@@ -62,6 +60,7 @@ const IndexPage = () => (
 						]}
 					/>
 					<Header siteTitle={data.site.siteMetadata.title} />
+					<div></div>
 					<h2>About</h2>
 					<p>
 						I'm Cortlan, a detail oriented full stack software engineer. I've
@@ -91,14 +90,7 @@ const IndexPage = () => (
 							</li>
 						))}
 					</ul>
-					<div style={{ marginTop: '5rem' }} />
-					<InlineList style={{ marginRight: 'auto', marginLeft: 'auto' }}>
-						{socials.map((social, index) => (
-							<li key={index}>
-								<a href={social.url}>{social.name}</a>
-							</li>
-						))}
-					</InlineList>
+					<Footer />
 				</Layout>
 			);
 		}}
