@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import { Emoji } from '../components/emoji';
 import Header from '../components/header';
 import '../styles/list.css';
+import '../styles/index.css';
 
 const byFile = fileName => edge => edge.node.file === fileName;
 
