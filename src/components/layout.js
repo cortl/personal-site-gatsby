@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Header } from './header';
+import { Footer } from './footer';
+import SEO from './seo';
 
 const Layout = ({ children }) => (
 	<div
@@ -11,10 +14,23 @@ const Layout = ({ children }) => (
 			maxWidth: '40rem',
 		}}
 	>
-		<div>
-			{children}
-			<footer />
-		</div>
+		<SEO
+			title=' '
+			keywords={[
+				`gatsby`,
+				`application`,
+				`react`,
+				'personal',
+				'personal site',
+				'cortlan',
+				'bainbridge',
+				'cortlan bainbridge',
+				'open source',
+				'software',
+			]}
+		/>
+		{children}
+		<Footer />
 	</div>
 );
 
