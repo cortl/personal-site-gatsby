@@ -18,7 +18,7 @@ const IndexPage = () => (
 			cloud API development, and front-end development
 		</p>
 		<p>
-			I'm a open source aficionado{' '}
+			I'm an open source aficionado{' '}
 			<Emoji symbol={'💻'} description={'computer'} />
 			, powerlifting enthusiast
 			<Emoji symbol={'🏋️‍♀'} description={'male weightlifter'} />, and coffee
