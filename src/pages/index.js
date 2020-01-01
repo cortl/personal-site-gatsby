@@ -21,7 +21,7 @@ const IndexPage = () => (
 			I'm an open source aficionado{' '}
 			<Emoji symbol={'💻'} description={'computer'} />
 			, powerlifting enthusiast
-			<Emoji symbol={'🏋️‍♀'} description={'male weightlifter'} />, and coffee
+			<Emoji symbol={'🏋️‍♂️'} description={'male weightlifter'} />, and coffee
 			consumer <Emoji symbol={'☕'} description={'cup of coffee'} />
 		</p>
 		<h2>Projects</h2>
