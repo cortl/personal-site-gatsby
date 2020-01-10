@@ -16,12 +16,12 @@ export const projects = [
 		url: 'https://github.com/cortl/insomnia-plugin-googlejwt',
 	},
 	{
-		name: 'Ratings',
-		emoji: '🎞',
-		emojiDescription: 'film',
+		name: 'Recipes',
+		emoji: '👨‍🍳',
+		emojiDescription: 'chef',
 		description:
-			'Web application built using Vue.js and Express that displays visualizations for TV shows.  Built on top of my express-gcp project',
-		url: 'https://ratings.cortlan.dev',
+			"website archive of recipes I've made with source, ratings, and notes",
+		url: 'https://recipes.cortlan.dev',
 	},
 	{
 		name: 'Express GCP',
