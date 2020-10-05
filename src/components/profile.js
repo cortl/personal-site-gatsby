@@ -1,9 +1,11 @@
 import React from 'react';
 
 const style = {
-	maxHeight: '4rem',
+	maxHeight: '10rem',
 	borderRadius: '50%',
-	margin: 'auto',
+	marginRight: 'auto',
+	marginLeft: 'auto',
+	display: 'block',
 };
 
 const Profile = () => (
