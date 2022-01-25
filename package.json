@@ -18,7 +18,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "firebase-tools": "^10.0.1",
+    "firebase-tools": "^10.0.2",
     "gatsby": "^4.4.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^4.4.0",
