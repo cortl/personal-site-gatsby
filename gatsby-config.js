@@ -7,7 +7,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
